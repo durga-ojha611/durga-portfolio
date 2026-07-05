@@ -1,48 +1,49 @@
 // ============================================================
-// portfolioData.js — Centralized configuration for Md Yusuf's Portfolio
+// portfolioData.js — Centralized configuration for Durga's Portfolio
 // All external links, personal info, and content in one place.
 // Update this file to change any content across the entire site.
 // ============================================================
 
 export const personalInfo = {
-  name: "Md Yusuf",
-  firstName: "Md Yusuf",
-  brandName: "Md Yusuf",
-  title: "Full Stack & Java Developer",
-  location: "Bhopal, India",
-  phone: "+91 99396-08743",
+  name: "Durga",
+  firstName: "Durga",
+  brandName: "Durga",
+  title: "Full Stack Developer (MERN | Next.js)",
+  location: "Delhi, DL 110081",
+  phone: "+91 9311041261",
   emails: {
-    primary: "mdyusufcse096@iesuniversity.ac.in",
-    secondary: "yusuf.rgpv@gmail.com",
+    primary: "d88177600@gmail.com",
+    secondary: "",
   },
   summary:
-    "Aspiring software engineer and motivated B.Tech Computer Science student with solid skills in Java, Spring Boot, React, and Python. Passionate about building scalable full-stack applications with clean architecture and modern tech stacks.",
-  resumeUrl: "/Md_Yusuf_Resume_2026.pdf",
+    "Full Stack Developer skilled in React.js, Next.js, Node.js, Express.js, and MongoDB/MySQL (MERN stack), with hands-on experience building and deploying scalable, production-grade web apps. Strong foundation in data structures, algorithms, and system design.",
+  resumeUrl: "/Durga_Resume.pdf",
 };
 
 export const socialLinks = {
-  github: "https://github.com/mdyusuf0",
-  linkedin: "https://linkedin.com/in/mdyusuf0",
-  instagram: "https://instagram.com/heyyusuffff",
+  github: "https://github.com/durga-ojha611",
+  linkedin: "https://linkedin.com/in/durga-ojha",
+  // instagram is removed as not provided — do NOT add an empty string (causes broken links)
+  website: "https://elan-lime.vercel.app",
 };
 
 export const heroContent = {
-  greeting: "Hi, I'm Md Yusuf",
-  titleHighlight: "Full Stack & Java Developer",
+  greeting: "Hi, I'm Durga",
+  titleHighlight: "Full Stack Developer",
   subtitle:
-    "I build fast, scalable applications using Java, Spring Boot, MERN Stack, and Python.",
+    "I build fast, scalable applications using the MERN Stack and Next.js with a strong focus on AI integration.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
-    href: "mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
+    href: "mailto:d88177600@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Durga,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
   },
-  ctaResume: { text: "Download Resume", href: "/Md_Yusuf_Resume_2026.pdf" },
+  ctaResume: { text: "Download Resume", href: "/Durga_Resume.pdf" },
 };
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Md Yusuf</span>, an aspiring software engineer based in Bhopal, India, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
-  techStack: ["Java", "Spring Boot", "MERN Stack"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Durga</span>, a passionate Full Stack Developer based in Delhi, India. I craft clean, functional, and scalable web applications powered by the MERN stack and Next.js.`,
+  techStack: ["Next.js", "React.js", "MERN Stack"],
 };
 
 export const skillsContent = {
@@ -53,244 +54,198 @@ export const skillsContent = {
   cards: [
     {
       number: "01",
-      title: "Research",
+      title: "Research & Planning",
       text: "I start by understanding goals, user requirements, and technical constraints to lay a rock-solid foundation for the project.",
     },
     {
       number: "02",
-      title: "Design",
-      text: "Crafting clean architecture, intuitive interfaces, and pixel-perfect wireframes that guarantee an engaging and accessible user experience.",
+      title: "Architecture & Design",
+      text: "Crafting clean architecture and designing intuitive interfaces that guarantee an engaging and accessible user experience.",
     },
     {
       number: "03",
-      title: "Develop",
-      text: "Building scalable backends and responsive frontends using modern tech stacks and best practices.",
+      title: "Development",
+      text: "Building scalable backends and responsive frontends using modern tech stacks like Next.js, Node.js, and MongoDB.",
     },
     {
       number: "04",
-      title: "Deploy",
-      text: "Rigorous testing, performance optimization, and seamless deployment to cloud infrastructure, followed by ongoing support.",
+      title: "Optimization & Deploy",
+      text: "Rigorous testing, SEO/LCP optimization, and seamless deployment to cloud infrastructure.",
     },
   ],
   endText: "Ready to ship!",
 };
 
-// Brand New Technical Skills Data
 export const technicalSkills = {
   categories: [
     {
-      title: "Programming Languages",
+      title: "Languages & Frontend",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Python", level: 75 }
-      ]
+        { name: "JavaScript", level: 90 },
+        { name: "React.js", level: 90 },
+        { name: "Next.js (SSR)", level: 85 },
+        { name: "Tailwind CSS", level: 90 },
+        { name: "HTML5 / CSS3", level: 95 },
+      ],
     },
     {
-      title: "Full Stack",
+      title: "Backend & Databases",
       skills: [
-        { name: "MERN Stack", level: 90 },
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 92 }
-      ]
+        { name: "Node.js", level: 85 },
+        { name: "Express.js", level: 85 },
+        { name: "MongoDB (Atlas)", level: 85 },
+        { name: "MySQL", level: 80 },
+        { name: "RESTful APIs", level: 90 },
+      ],
     },
     {
-      title: "Backend",
+      title: "AI & ML Integration",
       skills: [
-        { name: "Spring Boot", level: 88 },
-        { name: "FastAPI", level: 75 },
-        { name: "REST APIs", level: 90 }
-      ]
+        { name: "OpenAI API", level: 85 },
+        { name: "TensorFlow.js", level: 80 },
+        { name: "Semantic Search", level: 85 },
+        { name: "Google Gen AI", level: 80 },
+      ],
     },
     {
-      title: "Databases",
-      skills: [
-        { name: "MongoDB", level: 88 },
-        { name: "MySQL", level: 85 },
-        { name: "Firebase", level: 80 }
-      ]
-    },
-    {
-      title: "Tools & Automation",
+      title: "Tools & Practices",
       skills: [
         { name: "Git & GitHub", level: 90 },
-        { name: "VS Code", level: 95 },
-        { name: "Postman", level: 88 },
-        { name: "n8n", level: 82 },
-        { name: "MongoDB Compass", level: 85 },
-        { name: "Antigravity", level: 80 },
-        { name: "Codex", level: 75 }
-      ]
+        { name: "Docker", level: 75 },
+        { name: "CI/CD", level: 80 },
+        { name: "Debugging", level: 90 },
+      ],
     },
     {
-      title: "Computer Science Concepts",
+      title: "Security & Auth",
       skills: [
-        { name: "Data Structures", level: 88 },
+        { name: "JWT Auth", level: 85 },
+        { name: "Passport.js", level: 80 },
+        { name: "App Security", level: 80 },
+      ],
+    },
+    {
+      title: "Core Concepts",
+      skills: [
+        { name: "Data Structures", level: 85 },
         { name: "Algorithms", level: 85 },
-        { name: "DBMS", level: 86 },
-        { name: "OOP", level: 90 },
-        { name: "Software Engineering", level: 84 }
-      ]
-    }
-  ]
+        { name: "System Design", level: 80 },
+        { name: "LCP & SEO Opt.", level: 85 },
+      ],
+    },
+  ],
 };
 
-// Brand New Content Creation Data
-export const contentCreation = {
-  badge: "Cinematic Content",
-  heading: "Creative Direction & Cinematic Edits",
-  description: "Beyond coding, I craft visual stories with premium editing, color grading, and creative pacing.",
-  categories: [
-    {
-      title: "Cinematic Reels",
-      description: "Visual stories crafted with cinematic lighting, premium color grading, and high-impact sound design.",
-      stats: "50+ Reels Created",
-      icon: "🎥"
-    },
-    {
-      title: "Travel Videos",
-      description: "Immersive travel vlogs and aesthetic edits capturing cultures, landscapes, and visual rhythms.",
-      stats: "15+ Countries/Cities",
-      icon: "✈️"
-    },
-    {
-      title: "Educational Reels",
-      description: "Fast-paced tech tutorials and educational content designed to simplify coding and software engineering.",
-      stats: "100k+ Views",
-      icon: "🧠"
-    },
-    {
-      title: "My Own Creative Edits",
-      description: "Experimental transitions, 3D overlays, and trendsetting visual effects that push creative bounds.",
-      stats: "Personal Projects",
-      icon: "⚡"
-    }
-  ]
-};
-
-// Brand New Leadership Data
-export const leadershipList = [
+// Experience (formerly Internships)
+export const experienceList = [
   {
-    title: "IEEE Madhya Pradesh Section (Social Media Team)",
-    description: "Managed and coordinated digital content, driving audience engagement and designing interactive visual campaigns for tech events.",
-    role: "Social Media Coordinator",
-    badge: "Volunteer"
+    organization: "Youth United Council of India (YUCI)",
+    role: "Frontend Developer — Web Development Team",
+    duration: "June 2026 - Present",
+    skills: [
+      "Next.js Development",
+      "Tailwind CSS",
+      "Data Visualization",
+      "Debugging & Code Review",
+      "GitHub Branch Management",
+    ],
+    tech: ["Next.js", "React.js", "Tailwind CSS", "Git / GitHub"],
   },
-  {
-    title: "Team Coordinator – Go-Kart International Racing 2K25",
-    description: "Led multi-disciplinary teams in project management, budget control, and logistics coordination for a high-profile international racing event.",
-    role: "Team Coordinator",
-    badge: "Leadership"
-  },
-  {
-    title: "5-Day MOE IDE Bootcamp, Roorkee",
-    description: "Participated in an intensive Innovation, Design, and Entrepreneurship Bootcamp organized by the Ministry of Education at IIT Roorkee.",
-    role: "Bootcamp Graduate",
-    badge: "Innovation"
-  },
-  {
-    title: "Hosted INFORIA Tech Summit Hackathon",
-    description: "Organized and hosted the flagship hackathon, managing registrations, mentoring participant teams, and coordinating judge evaluations.",
-    role: "Hackathon Organizer",
-    badge: "Co-Curricular"
-  },
-  {
-    title: "Event Coordinator & Anchoring – INFORIA 2K25",
-    description: "Coordinated technical events and served as the main stage anchor, speaking in front of large crowds and managing the summit flow.",
-    role: "Stage Anchor & Coordinator",
-    badge: "Public Speaking"
-  }
 ];
 
-// Brand New Internships Data
-export const internshipsList = [
+// Achievements (formerly Leadership)
+export const achievementsList = [
   {
-    organization: "Netlink, Bhopal",
-    role: "Data Analytics & BI Tools Intern",
-    duration: "June 2025 - August 2025",
-    skills: ["Data Analytics", "Business Intelligence", "Dashboard Design", "Data Modeling"],
-    tech: ["Lumenore", "MySQL", "Excel", "BI Tools"]
+    title: "1st Position — College Tech Fest",
+    description:
+      "Won the top prize by building and presenting a fully functional web project under time pressure, standing out for technical execution and innovation.",
+    role: "Winner",
+    badge: "Achievement",
   },
   {
-    organization: "Canva",
-    role: "Visual Content Creator & Designer",
-    duration: "May 2024 - June 2024",
-    skills: ["Visual Designing", "Poster Design", "Team Branding", "Asset Creation"],
-    tech: ["Canva Pro", "Figma", "Canva Design Suite"]
+    title: "National-Level Hackathon Competitor",
+    description:
+      "Core backend developer and presenter across 5+ hackathons. Built a blockchain-based expense-splitting app in a 2-day national hackathon, finishing 13th nationwide.",
+    role: "Backend Developer",
+    badge: "Hackathon",
   },
   {
-    organization: "CollegeTips.in",
-    role: "Web Development Intern",
-    duration: "1 Month (Offline)",
-    skills: ["Frontend Development", "Responsive Layouts", "API Testing", "Web Performance"],
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
-  }
+    title: "Space-Tech Aggregator",
+    description:
+      "Architected the backend for a unified platform consolidating NASA and ISRO datasets into one consistent, queryable API interface.",
+    role: "Backend Architect",
+    badge: "Project",
+  },
 ];
 
-// Brand New Soft Skills Data
 export const softSkillsList = [
-  { name: "Leadership", icon: "👑", desc: "Guiding teams, managing tasks, and driving project completion with shared vision." },
-  { name: "Public Speaking", icon: "🎤", desc: "Confident stage presence, anchoring summits, and delivering articulate technical ideas." },
-  { name: "Team Collaboration", icon: "🤝", desc: "Collaborating across fields, building racing carts, and engineering code in sync." },
-  { name: "Communication", icon: "💬", desc: "Clear, concise, and structured interactions in both business and technical contexts." },
-  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex engineering tasks into clean, logical, and modular pieces." },
-  { name: "Adaptability", icon: "🌟", desc: "Quick to pick up new frameworks like FastAPI, Spring Boot, or automation tools like n8n." },
-  { name: "Creativity", icon: "🎨", desc: "Blending cinematic aesthetics with software structure to build premium experiences." },
-  { name: "Time Management", icon: "⏰", desc: "Balancing B.Tech studies, event hosting, and developing robust software platforms." }
+  {
+    name: "Problem Solving",
+    icon: "🧩",
+    desc: "Breaking down complex engineering tasks into clean, logical, and modular pieces.",
+  },
+  {
+    name: "Team Leadership",
+    icon: "👑",
+    desc: "Led the frontend team, guided teammates, and kept the main branch stable under pressure.",
+  },
+  {
+    name: "Debugging",
+    icon: "🐛",
+    desc: "Served as lead debugger across projects, resolving UI glitches, console warnings, and merge conflicts.",
+  },
+  {
+    name: "Performance Optimization",
+    icon: "⚡",
+    desc: "Optimized Next.js Image components for Largest Contentful Paint (LCP) across projects.",
+  },
+  {
+    name: "Adaptability",
+    icon: "🌟",
+    desc: "Quick to integrate new technologies like TensorFlow.js, OpenAI embeddings, and Supabase.",
+  },
 ];
 
 export const projects = [
   {
-    id: "foodmesh",
+    id: "elan",
     number: "01",
-    badge: "🚀 Flagship Project",
-    title: "FoodMesh",
+    badge: "🚀 Live Platform",
+    title: "ELAN — AI-Powered Luxury E-Commerce",
     description:
-      "FoodMesh — An enterprise-grade multi-tenant restaurant management and food ordering SaaS platform inspired by UrbanPiper. It enables restaurants to manage multiple outlets, menus, inventory, customers, staff, and orders through a scalable architecture with secure authentication, role-based access control, and real-time operations. Built with React, Next.js, NestJS, PostgreSQL, Redis, Kafka, Elasticsearch, Docker, Kubernetes, and AWS.",
+      "Developed and deployed a high-performance luxury fashion e-commerce app using Next.js 16 (SSR) and a scalable Node.js/Express backend. Engineered an AI semantic search engine using MongoDB Atlas Vector Search and OpenAI's text-embedding-3-small model.",
     techTags: [
-      "React",
-      "Next.js",
-      "NestJS",
-      "PostgreSQL",
-      "Redis",
-      "Kafka",
-      "Elasticsearch",
-      "Docker",
-      "Kubernetes",
-      "AWS",
+      "Next.js 16",
+      "Node.js",
+      "MongoDB Atlas",
+      "OpenAI API",
+      "Zustand",
+      "Tailwind CSS",
     ],
     links: {
-      github: "https://github.com/ersamirsingh/UrbanPiper",
-      demo: null,
+      github: "https://github.com/durga-ojha611",
+      demo: "https://elan-lime.vercel.app",
     },
     isFlagship: true,
   },
   {
-    id: "karigar",
+    id: "cropdoc",
     number: "02",
-    badge: null,
-    title: "Karigar",
+    badge: "AI Application",
+    title: "Cropdoc — AI-Powered Leaf Disease Detection",
     description:
-      "A platform connecting local skilled workers with customers, featuring real-time search, worker profiles, and booking management with full database integration.",
-    techTags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+      "Built real-time leaf scanning using live camera input and TensorFlow.js, with chemical and natural remedy recommendations. Designed a community forum and progress-tracking dashboard, optimizing for performance and scalability.",
+    techTags: [
+      "React.js",
+      "TypeScript",
+      "TensorFlow.js",
+      "Firebase",
+      "Supabase",
+      "Framer Motion",
+    ],
     links: {
-      github: "https://github.com/mdyusuf0/Karigar",
-      frontendDemo: "https://karigar-frontend.onrender.com",
-      backendApi: "https://karigar-zny2.onrender.com",
-    },
-    isFlagship: false,
-  },
-  {
-    id: "sentiment-analysis",
-    number: "03",
-    badge: null,
-    title: "AI-Powered Sentiment Analysis",
-    description:
-      "A full-stack web application that analyzes citizen feedback using Artificial Intelligence to classify sentiments as positive, negative, or neutral. Features a responsive React frontend, a Node.js backend, MongoDB for data storage, and n8n automation for workflow orchestration — enabling real-time insights and efficient feedback management.",
-    techTags: ["React", "Node.js", "MongoDB", "n8n", "AI/ML", "REST API"],
-    links: {
-      github: "#", // Update when available
+      github: "https://github.com/durga-ojha611",
+      demo: null,
     },
     isFlagship: false,
   },
@@ -299,19 +254,9 @@ export const projects = [
 export const certificates = {
   featured: [
     {
-      name: "Oracle Cloud Infrastructure 2025",
-      issuer: "Oracle",
-      icon: "☁️",
-    },
-    {
       name: "Programming in Java (94%)",
       issuer: "NPTEL",
       icon: "☕",
-    },
-    {
-      name: "C Programming & Assembly Language",
-      issuer: "NPTEL",
-      icon: "⚙️",
     },
     {
       name: "Technology Job Simulation",
@@ -319,43 +264,46 @@ export const certificates = {
       icon: "💼",
     },
     {
-      name: "Career Edge – IT Primer",
-      issuer: "TCS iON",
+      name: "Sigma 40 DSA Program",
+      issuer: "Apna College",
       icon: "🎓",
     },
-    {
-      name: "Fundamentals of BI & Analytics",
-      issuer: "Lumenore",
-      icon: "📊",
-    },
   ],
-  viewAllUrl:
-    "https://drive.google.com/file/d/1ObdGWtVSx8SsfR4AcbCySSd9LFXcAs9f/view?usp=sharing",
+  // Link to the DSA certificate PDF served from public folder
+  viewAllUrl: "/certificate-sigma-40-dsa-67f7d79f6183f55a0c0f6bc6 (1).pdf",
 };
 
 export const education = {
-  degree: "B.Tech – Computer Science & Engineering",
-  institution: "IES College of Technology (RGPV)",
-  cgpa: "8.35",
-  graduation: "2027",
-  twelfth: "12th Science – 81%",
-  tenth: "10th CBSE – 70%",
+  degree: "Bachelor of Computer Applications (BCA)",
+  institution: "Govt. College Bahadurgarh",
+  cgpa: "9.13",
+  graduation: "Expected 08/2028",
+  twelfth: {
+    level: "Senior Secondary (Class XII)",
+    school: "Sarvodaya Kanya Vidyalaya Qutubgarh",
+    subject: "Computer Science",
+    cgpa: "9.12",
+    year: "2024",
+  },
 };
 
 export const footerContent = {
   taglines: [
-    "Software Engineering & Web Dev",
-    "Java · Spring Boot · React",
-    "Full Stack Applications",
+    "Full Stack Development",
+    "MERN Stack · Next.js",
+    "AI-Powered Applications",
   ],
-  credential: "B.Tech CSE · CGPA 8.35",
-  copyright: `© ${new Date().getFullYear()} Md Yusuf | Built with React`,
+  credential: "BCA · CGPA 9.13",
+  copyright: `© ${new Date().getFullYear()} Durga | Built with React`,
 };
 
 // EmailJS Configuration
-// Will read directly from environment variables in Vite (starting with VITE_)
+// Set VITE_EMAILJS_* environment variables in a .env file to enable
 export const emailjsConfig = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_EMAILJS_SERVICE_ID",
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_EMAILJS_TEMPLATE_ID",
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_EMAILJS_PUBLIC_KEY",
+  serviceId:
+    import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_EMAILJS_SERVICE_ID",
+  templateId:
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_EMAILJS_TEMPLATE_ID",
+  publicKey:
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_EMAILJS_PUBLIC_KEY",
 };
