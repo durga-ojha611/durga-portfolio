@@ -9,21 +9,20 @@ export const personalInfo = {
   firstName: "Durga",
   brandName: "Durga",
   title: "Full Stack Developer (MERN | Next.js)",
-  location: "Delhi, DL 110081",
+  location: "Delhi, India",
   phone: "+91 9311041261",
   emails: {
     primary: "d88177600@gmail.com",
     secondary: "",
   },
   summary:
-    "Full Stack Developer skilled in React.js, Next.js, Node.js, Express.js, and MongoDB/MySQL (MERN stack), with hands-on experience building and deploying scalable, production-grade web apps. Strong foundation in data structures, algorithms, and system design.",
+    "Full Stack Developer (MERN/Next.js) shipping production AI apps end-to-end. Led a cross-functional frontend team at YUCI, presenting UI/UX decisions to stakeholders. Built ELAN (AI semantic search e-commerce) and Crop Doc (real-time TensorFlow.js disease detection), both live in production. Strong communicator across engineering and non-technical stakeholders, owning full deployment pipelines (Vercel, Render, Docker).",
   resumeUrl: "/Durga_Resume.pdf",
 };
 
 export const socialLinks = {
   github: "https://github.com/durga-ojha611",
   linkedin: "https://linkedin.com/in/durga-ojha",
-  // instagram is removed as not provided — do NOT add an empty string (causes broken links)
   website: "https://elan-lime.vercel.app",
 };
 
@@ -95,7 +94,8 @@ export const technicalSkills = {
         { name: "Express.js", level: 85 },
         { name: "MongoDB (Atlas)", level: 85 },
         { name: "MySQL", level: 80 },
-        { name: "RESTful APIs", level: 90 },
+        { name: "Redis", level: 80 },
+        { name: "REST APIs", level: 90 },
       ],
     },
     {
@@ -108,12 +108,12 @@ export const technicalSkills = {
       ],
     },
     {
-      title: "Tools & Practices",
+      title: "Tools & Deployment",
       skills: [
         { name: "Git & GitHub", level: 90 },
         { name: "Docker", level: 75 },
         { name: "CI/CD", level: 80 },
-        { name: "Debugging", level: 90 },
+        { name: "Vercel / Render", level: 85 },
       ],
     },
     {
@@ -125,10 +125,10 @@ export const technicalSkills = {
       ],
     },
     {
-      title: "Core Concepts",
+      title: "Problem Solving",
       skills: [
         { name: "Data Structures", level: 85 },
-        { name: "Algorithms", level: 85 },
+        { name: "Algorithms (Java)", level: 85 },
         { name: "System Design", level: 80 },
         { name: "LCP & SEO Opt.", level: 85 },
       ],
@@ -139,40 +139,39 @@ export const technicalSkills = {
 // Experience (formerly Internships)
 export const experienceList = [
   {
-    organization: "Youth United Council of India (YUCI)",
-    role: "Frontend Developer — Web Development Team",
-    duration: "June 2026 - Present",
+    organization: "Youth United Council of India (YUCI), Chennai",
+    role: "Lead Frontend Developer",
+    duration: "05/2026 – 07/2026",
     skills: [
-      "Next.js Development",
-      "Tailwind CSS",
-      "Data Visualization",
-      "Debugging & Code Review",
-      "GitHub Branch Management",
+      "Led AUR end-to-end — a global university ranking platform; owned UI/UX across the full Next.js + FastAPI stack, presenting design direction to founders.",
+      "Built the Comparison Matrix feature from scratch — responsive Next.js UI backed by custom FastAPI routes, coordinated with backend engineers on API contracts.",
+      "Stabilized the main branch — resolved deep UI bugs and complex merge conflicts, mentoring teammates through Git workflows.",
+      "Owned deployment architecture — Dockerized FastAPI on Render, shipped Next.js on Vercel, documented setup for the team."
     ],
-    tech: ["Next.js", "React.js", "Tailwind CSS", "Git / GitHub"],
+    tech: ["Next.js", "FastAPI", "Docker", "Render", "Vercel", "Git / GitHub"],
   },
 ];
 
 // Achievements (formerly Leadership)
 export const achievementsList = [
   {
-    title: "1st Position — College Tech Fest",
+    title: "1st Position, College Tech Fest",
     description:
-      "Won the top prize by building and presenting a fully functional web project under time pressure, standing out for technical execution and innovation.",
+      "Built and presented a full web project to judges under time pressure.",
     role: "Winner",
     badge: "Achievement",
   },
   {
-    title: "National-Level Hackathon Competitor",
+    title: "National-Level Hackathons",
     description:
-      "Core backend developer and presenter across 5+ hackathons. Built a blockchain-based expense-splitting app in a 2-day national hackathon, finishing 13th nationwide.",
-    role: "Backend Developer",
+      "Competed in 5+ national-level hackathons — ranked 13th nationwide with a blockchain expense-splitting app.",
+    role: "Competitor",
     badge: "Hackathon",
   },
   {
     title: "Space-Tech Aggregator",
     description:
-      "Architected the backend for a unified platform consolidating NASA and ISRO datasets into one consistent, queryable API interface.",
+      "Architected a Space-Tech Aggregator — consolidated NASA and ISRO datasets into a single queryable API.",
     role: "Backend Architect",
     badge: "Project",
   },
@@ -208,44 +207,72 @@ export const softSkillsList = [
 
 export const projects = [
   {
-    id: "elan",
+    id: "aur",
     number: "01",
+    badge: "🎓 Internship Project",
+    title: "AUR — Global University Ranking Platform",
+    description:
+      "Led AUR end-to-end — a global university ranking platform. Built the Comparison Matrix feature from scratch with a responsive Next.js UI backed by custom FastAPI routes. Owned the deployment architecture by Dockerizing FastAPI on Render and shipping Next.js on Vercel.",
+    techTags: [
+      "Next.js",
+      "FastAPI",
+      "Docker",
+      "Render",
+      "Vercel",
+      "Git",
+    ],
+    images: ["/projects/aur1.png", "/projects/aur2.png", "/projects/aur3.png"],
+    links: {
+      github: "https://github.com/durga-ojha611",
+      demo: "https://aur-tau.vercel.app",
+    },
+    isFlagship: true,
+  },
+  {
+    id: "elan",
+    number: "02",
     badge: "🚀 Live Platform",
     title: "ELAN — AI-Powered Luxury E-Commerce",
     description:
-      "Developed and deployed a high-performance luxury fashion e-commerce app using Next.js 16 (SSR) and a scalable Node.js/Express backend. Engineered an AI semantic search engine using MongoDB Atlas Vector Search and OpenAI's text-embedding-3-small model.",
+      "Engineered AI semantic search with MongoDB Atlas Vector Search + OpenAI embeddings (1536-D). Shipped a high-performance SSR storefront on Next.js 16, powered by a scalable Node/Express backend. Built hydration-safe Zustand persistence — eliminated session, cart, and theme bugs across reloads.",
     techTags: [
       "Next.js 16",
+      "React",
       "Node.js",
+      "Express.js",
       "MongoDB Atlas",
       "OpenAI API",
       "Zustand",
       "Tailwind CSS",
     ],
+    images: ["/projects/elan1.png", "/projects/elan2.png", "/projects/elan3.png"],
     links: {
       github: "https://github.com/durga-ojha611",
       demo: "https://elan-lime.vercel.app",
     },
-    isFlagship: true,
+    isFlagship: false,
   },
   {
     id: "cropdoc",
-    number: "02",
+    number: "03",
     badge: "AI Application",
-    title: "Cropdoc — AI-Powered Leaf Disease Detection",
+    title: "Crop Doc — AI-Powered Leaf Disease Detection",
     description:
-      "Built real-time leaf scanning using live camera input and TensorFlow.js, with chemical and natural remedy recommendations. Designed a community forum and progress-tracking dashboard, optimizing for performance and scalability.",
+      "Built live leaf-disease scanning with TensorFlow.js, delivering instant chemical and natural remedies. Engineered offline scan queuing with auto-sync — diagnosis works reliably with zero connectivity. Shipped JWT authentication, a community forum, and a farmer progress-tracking dashboard.",
     techTags: [
       "React.js",
       "TypeScript",
-      "TensorFlow.js",
-      "Firebase",
-      "Supabase",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
       "Framer Motion",
+      "TensorFlow.js",
     ],
+    images: ["/projects/crop1.png", "/projects/crop2.png", "/projects/crop3.png"],
     links: {
       github: "https://github.com/durga-ojha611",
-      demo: null,
+      demo: "https://crop-doc-osoq.vercel.app",
     },
     isFlagship: false,
   },
@@ -254,19 +281,21 @@ export const projects = [
 export const certificates = {
   featured: [
     {
-      name: "Programming in Java (94%)",
-      issuer: "NPTEL",
-      icon: "☕",
+      name: "Data Science & Generative AI",
+      issuer: "ESG Institute",
+      icon: "🤖",
+      url: "/data_science_certificate.jpg",
     },
     {
-      name: "Technology Job Simulation",
-      issuer: "Deloitte",
-      icon: "💼",
-    },
-    {
-      name: "Sigma 40 DSA Program",
+      name: "Alpha (DSA with Java)",
       issuer: "Apna College",
       icon: "🎓",
+      url: "/certificate-sigma-40-dsa-67f7d79f6183f55a0c0f6bc6 (1).pdf",
+    },
+    {
+      name: "Programming in Java",
+      issuer: "NPTEL",
+      icon: "☕",
     },
   ],
   // Link to the DSA certificate PDF served from public folder
@@ -274,14 +303,14 @@ export const certificates = {
 };
 
 export const education = {
-  degree: "Bachelor of Computer Applications (BCA)",
+  degree: "Bachelor of Computer Applications",
   institution: "Govt. College Bahadurgarh",
   cgpa: "9.13",
   graduation: "Expected 08/2028",
   twelfth: {
-    level: "Senior Secondary (Class XII)",
+    level: "Senior Secondary",
     school: "Sarvodaya Kanya Vidyalaya Qutubgarh",
-    subject: "Computer Science",
+    subject: "Class XII",
     cgpa: "9.12",
     year: "2024",
   },

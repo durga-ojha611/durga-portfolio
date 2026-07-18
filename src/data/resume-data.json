@@ -1,0 +1,62 @@
+{
+  "personal_summary": "I am a software engineer...",
+  "contact_info": {
+    "email": "hello@example.com",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username",
+    "preferred_next_step": "Please reach out to me via email or the Contact form on my website."
+  },
+  "skills": {
+    "Core": [
+      "JavaScript",
+      "React",
+      "Node.js"
+    ],
+    "Proficient": [
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "Familiar": [
+      "Python",
+      "Docker",
+      "AWS"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Project Name",
+      "summary": "One-line summary of the project.",
+      "problem_solved": "The specific problem this project aimed to solve.",
+      "tech_stack": ["React", "Node.js", "MongoDB"],
+      "contributions": "My specific contributions to the project.",
+      "links": {
+        "github": "https://github.com/username/project",
+        "live_demo": "https://project-demo.com"
+      },
+      "technical_decisions": [
+        "Why I chose X over Y.",
+        "How I handled Z."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer",
+      "organization": "Company Name",
+      "dates": "Jan 2020 - Present",
+      "responsibilities": [
+        "Developed features...",
+        "Led a team..."
+      ],
+      "skills_gained": ["Leadership", "System Design"]
+    }
+  ],
+  "education_and_certifications": [
+    {
+      "degree_or_cert": "B.S. Computer Science",
+      "institution": "University Name",
+      "year": "2019"
+    }
+  ]
+}
