@@ -1,5 +1,5 @@
 import React from 'react';
-import stackImage from '../assets/about/durga-avatar.png';
+import stackImage from '../assets/about/ChatGPT Image Jul 19, 2026, 10_40_11 PM.png';
 import { aboutContent } from '../data/portfolioData';
 
 // Tech stack icons — Next.js, React, Node.js (matching Durga's stack)
@@ -65,11 +65,11 @@ const About = () => {
                 <div className="w-8 h-2 bg-black/30 rounded-full shadow-inner"></div>
               </div>
               {/* Image Container */}
-              <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800 border-2 border-transparent">
+              <div className="w-full aspect-[3/4] flex items-center justify-center overflow-hidden rounded-xl bg-gray-800 border-2 border-transparent">
                 <img 
                   src={stackImage} 
                   alt="Durga — Full Stack Developer" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>

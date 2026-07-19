@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// Background and Reel Video
+// Background Image and Reel Video
+import heroImage from '../assets/about/ChatGPT Image Jul 19, 2026, 10_40_11 PM.png';
 import heroVideo from '../assets/hero video/durga-hero-new.mp4';
 import { heroContent, personalInfo, socialLinks } from '../data/portfolioData';
 
@@ -15,11 +16,7 @@ const Hero = () => {
       once: true,
       easing: 'ease-out',
     });
-    // Background video autoplays muted in loop
-    if (bgVideoRef.current) {
-      bgVideoRef.current.muted = true;
-      bgVideoRef.current.play().catch(() => { });
-    }
+    // Video doesn't need to autoplay in the background anymore since we have a static image
   }, []);
 
   const openReel = () => {
@@ -35,18 +32,25 @@ const Hero = () => {
     setIsPlayingReel(false);
     if (bgVideoRef.current) {
       bgVideoRef.current.muted = true;
+      bgVideoRef.current.pause();
     }
   };
 
   return (
-    <section id="home" className="relative w-full h-screen overflow-hidden bg-[#FB2A29]">
-      {/* Background Video */}
+    <section id="home" className="relative w-full h-screen overflow-hidden bg-[#e6131a]">
+      {/* Default Static Background Image */}
+      <img
+        src={heroImage}
+        alt="Hero Background"
+        className="absolute top-0 left-0 w-full h-full object-contain object-bottom z-0"
+      />
+
+      {/* Reel Video (Fades in and plays when Play Reel is clicked) */}
       <video
         ref={bgVideoRef}
-        loop
         playsInline
-        autoPlay
-        className="absolute top-0 left-0 w-full h-full object-cover object-bottom z-0"
+        onEnded={closeReel}
+        className={`absolute top-0 left-0 w-full h-full object-cover object-bottom transition-opacity duration-500 z-10 ${isPlayingReel ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       >
         <source src={heroVideo} type="video/mp4" />
       </video>
