@@ -42,20 +42,27 @@ KNOWLEDGE BASE:
 ${JSON.stringify(resumeData, null, 2)}
 `;
 
-// Use the backend GEMINI_API_KEY from environment variables
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
-const model = genAI.getGenerativeModel({
-  model: 'gemini-flash-lite-latest',
-  systemInstruction: SYSTEM_PROMPT,
-});
-
 export default async function handler(req, res) {
   // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  // Use the backend GEMINI_API_KEY or VITE_GEMINI_API_KEY from environment variables
+  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+  
+  if (!apiKey) {
+    console.error('API key is missing. Please set VITE_GEMINI_API_KEY in your Vercel environment variables.');
+    return res.status(500).json({ error: 'Server misconfiguration: API key is missing' });
+  }
+
   try {
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-flash-lite-latest',
+      systemInstruction: SYSTEM_PROMPT,
+    });
+
     const { messages } = req.body;
 
     if (!messages || !Array.isArray(messages)) {
