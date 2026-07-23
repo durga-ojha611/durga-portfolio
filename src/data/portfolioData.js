@@ -17,7 +17,7 @@ export const personalInfo = {
   },
   summary:
     "Full Stack Developer (MERN/Next.js) shipping production AI apps end-to-end. Led a cross-functional frontend team at YUCI, presenting UI/UX decisions to stakeholders. Built ELAN (AI semantic search e-commerce) and Crop Doc (real-time TensorFlow.js disease detection), both live in production. Strong communicator across engineering and non-technical stakeholders, owning full deployment pipelines (Vercel, Render, Docker).",
-  resumeUrl: "/Durga_Resume.pdf",
+  resumeUrl: "/durgaResume.pdf",
 };
 
 export const socialLinks = {
@@ -36,7 +36,7 @@ export const heroContent = {
     text: "Contact Me",
     href: "mailto:d88177600@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Durga,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
   },
-  ctaResume: { text: "Download Resume", href: "/Durga_Resume.pdf" },
+  ctaResume: { text: "Download Resume", href: "/durgaResume.pdf" },
 };
 
 export const aboutContent = {
@@ -207,8 +207,49 @@ export const softSkillsList = [
 
 export const projects = [
   {
-    id: "aur",
+    id: "nexus",
     number: "01",
+    badge: "🚀 Live Platform",
+    title: "Nexus Engine — Deep Packet Inspection",
+    description:
+      "Deep Packet Inspection project featuring a high-performance C++ core processing engine, a Node.js telemetry relay, and a React/Vite frontend dashboard for real-time packet analysis and monitoring.",
+    techTags: ["C++", "Node.js", "React", "Vite", "Networking"],
+    images: ["/projects/nexus1.png", "/projects/nexus2.png"],
+    links: {
+      github: "https://github.com/durga-ojha611/DPI",
+      demo: "",
+      explanation: "/Nexus_Engine_Explained.pdf"
+    },
+    isFlagship: true,
+  },
+  {
+    id: "cropdoc",
+    number: "02",
+    badge: "AI Application",
+    title: "Crop Doc — AI-Powered Leaf Disease Detection",
+    description:
+      "Built live leaf-disease scanning with TensorFlow.js, delivering instant chemical and natural remedies. Engineered offline scan queuing with auto-sync — diagnosis works reliably with zero connectivity. Shipped JWT authentication, a community forum, and a farmer progress-tracking dashboard.",
+    techTags: [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Framer Motion",
+      "TensorFlow.js",
+    ],
+    images: ["/projects/crop1.png", "/projects/crop2.png", "/projects/crop3.png"],
+    links: {
+      github: "https://github.com/durga-ojha611",
+      demo: "https://crop-doc-r5gu.vercel.app/",
+      explanation: "/crop-doc-why-what-how.pdf"
+    },
+    isFlagship: false,
+  },
+  {
+    id: "aur",
+    number: "03",
     badge: "🎓 Internship Project",
     title: "AUR — Global University Ranking Platform",
     description:
@@ -226,11 +267,11 @@ export const projects = [
       github: "https://github.com/durga-ojha611",
       demo: "https://aur-tau.vercel.app",
     },
-    isFlagship: true,
+    isFlagship: false,
   },
   {
     id: "elan",
-    number: "02",
+    number: "04",
     badge: "🚀 Live Platform",
     title: "ELAN — AI-Powered Luxury E-Commerce",
     description:
@@ -249,30 +290,6 @@ export const projects = [
     links: {
       github: "https://github.com/durga-ojha611",
       demo: "https://elan-lime.vercel.app",
-    },
-    isFlagship: false,
-  },
-  {
-    id: "cropdoc",
-    number: "03",
-    badge: "AI Application",
-    title: "Crop Doc — AI-Powered Leaf Disease Detection",
-    description:
-      "Built live leaf-disease scanning with TensorFlow.js, delivering instant chemical and natural remedies. Engineered offline scan queuing with auto-sync — diagnosis works reliably with zero connectivity. Shipped JWT authentication, a community forum, and a farmer progress-tracking dashboard.",
-    techTags: [
-      "React.js",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "Framer Motion",
-      "TensorFlow.js",
-    ],
-    images: ["/projects/crop1.png", "/projects/crop2.png", "/projects/crop3.png"],
-    links: {
-      github: "https://github.com/durga-ojha611",
-      demo: "https://crop-doc-osoq.vercel.app",
     },
     isFlagship: false,
   },
